@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Survey Form Website</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap" rel="stylesheet"><link href="https://fonts.googleapis.com/css2?family=Alata&display=swap" rel="stylesheet">
+</head>
+<body>
+	<h1 id="title"><strong>Survey Kamu<strong></h1>
+	<p id="description">Aku dibuat untuk mengumpulkan data berharga</p>
+	<form id="survey-form" action="/action_page.php" method="get">
+		<label id="name-label" for="name">Nama</label>
+		<input type="text" id="name" placeholder="Isikan nama kamu" required><br>
+		<label id="email-label" for="email">Email</label>
+		<input id="email" type="email" placeholder="Isikan alamat email kamu" required="Tolong diisi bos"><br>
+		<label for="gender">Gender</label><br>
+			<input id="pria" type="radio" name="gender" value="Pria">
+		<label for="pria">Laki-laki</label> <br>
+			<input id="perempuan" type="radio" name="gender" value="Peremuan">
+		<label for="perempuan">Perempuan</label> <br>
+			<input id="undefine" type="radio" name="gender" value="Undefine">
+		<label for="undefine"> Tanda tanya</label> <br>
+		<label id="number-label" for="number">Nomor</label>
+			<input type="number" id="number" placeholder="Isi nomor ridermu" min="0" max="99"><br>
+		<label for="dropdown">Pilih pabrikan :</label>
+		<select id="dropdown">
+			<option disabled selected value>Pabrikan Motor Anda</option>
+			<option value="Honda">Honda</option>
+			<option value="Yamaha">Yamaha</option>
+			<option value="Ducati">Ducati</option>
+			<option value="Suzuki">Suzuki</option>
+			</select><br>
+		<label>Kendaraan Kepunyaan</label><br>
+			<input id="mobil" type="checkbox" value="mobil">
+		<label for="mobil">Mobil</label><br>
+			<input id="motor" type="checkbox" value="motor">
+		<label for="motor">Motor</label><br>
+			<input id="sepeda" type="checkbox" value="sepeda">
+		<label for="sepeda">Sepeda</label><br>
+		<label for="mimpimu">Ceritakan mimpimu : </label><br>
+		<textarea id="mimpimu" name="review">
+		</textarea><br>
+		<input id="submit" type="submit" value="SUBMIT">
+	</form>
+	<footer>&copy; Harya Anggitama</footer>
+</body>
+</html>
